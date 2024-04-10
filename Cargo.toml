@@ -1,0 +1,11 @@
+[package]
+name = "atspi-childrenchanged"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+atspi = { git = "https://github.com/odilia-app/atspi.git", default_features = false, features = ["tokio"] }
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1.15"
+zbus = { version = "4", features = ["tokio"] }
+zvariant = "4"
